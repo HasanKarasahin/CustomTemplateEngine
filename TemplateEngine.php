@@ -12,7 +12,7 @@ class TemplateEngine
 
     public function render($template_name)
     {
-        $path = './template/' . $template_name . '.html';
+        $path = './template/' . $template_name . '.tmp';
 
         if (file_exists($path)) {
             $content = file_get_contents($path);
